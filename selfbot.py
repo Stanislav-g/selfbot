@@ -14,7 +14,10 @@ async def on_redy():
 
 @client.command()
 async def start( ctx ):
-    await ctx.send(f"hi")
+    await ctx.send(f"!d bump")
+    
+    
+    
     
 token= os.environ.get('BOT_TOKEN')
 client.run( token, bot = False )
