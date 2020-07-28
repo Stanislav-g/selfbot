@@ -43,8 +43,7 @@ async def priv( ctx ):
     while True:
         a = random.choice(['эй','привет','алло','девять чи десять?','ку','аваава','как дела?','упс','ДЕВЯТЬ???','ало','алооо','здарова'])
         await ctx.send(a)
-        t = random.choice(int['5','10','100','24','20','40','120'])
-        await asyncio.sleep(t)
+        await asyncio.sleep(20)
         
     
     
