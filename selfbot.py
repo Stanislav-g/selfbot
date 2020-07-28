@@ -13,7 +13,6 @@ async def on_redy():
     print( 'Bot connected')
 
 
-
     
 @client.command()
 async def start( ctx ):
