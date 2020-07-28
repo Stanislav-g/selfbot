@@ -12,8 +12,7 @@ client = commands.Bot( command_prefix = '*', self_bot = True)
 async def on_redy():
     print( 'Bot connected')
 
-
-    
+  
 @client.command()
 async def start( ctx ):
     await ctx.channel.purge( limit = 1 )
