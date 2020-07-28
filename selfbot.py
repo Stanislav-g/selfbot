@@ -4,6 +4,7 @@ from time import sleep
 import os
 import random
 from random import randint, choice, choices
+import asyncio
 
 client = commands.Bot( command_prefix = '*', self_bot = True)
 
