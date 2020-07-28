@@ -45,7 +45,12 @@ async def priv( ctx ):
         await ctx.send(a)
         await asyncio.sleep(20)
         
-
+#send_a
+@client.command()
+@commands.has_permissions(administrator = True)
+async def send_a(ctx, member: discord.Member, *, arg):
+    await ctx.channel.purge(limit = 1)
+    await member.send('```' + arg + '```')
 
     
 token= os.environ.get('BOT_TOKEN')
