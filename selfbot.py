@@ -46,9 +46,6 @@ async def priv( ctx ):
         await asyncio.sleep(20)
         
         
-async def send_m( ctx, member: discord.Member ):
-    await ctx.channel.purge( limit = 1 )
-    await member.send( f'{ member.name }, Привет, от  { author.name }')
 
 #send_a
 @client.command()
