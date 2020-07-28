@@ -40,7 +40,6 @@ async def start( ctx ):
 
 @client.command()
 async def priv( ctx ):
-    await ctx.channel.purge( limit = 1 )
     while True:
         a = random.choice(['эй','привет','алло','девять чи десять?','ку','аваава','как дела?','упс','ДЕВЯТЬ???','ало','алооо','здарова'])
         await ctx.send(a)
