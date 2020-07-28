@@ -37,6 +37,7 @@ async def start( ctx ):
         await asyncio.sleep(7200)
     
 
+    
 @client.command()
 async def priv( ctx ):
     while True:
