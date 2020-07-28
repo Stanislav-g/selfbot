@@ -11,6 +11,6 @@ client = commands.Bot( command_prefix = '-', self_bot = True)
 async def on_redy():
     print( 'Bot connected')
 
-
-
-client.run("NzA2MTM4NjQwODQxMTc5MjE4.b5kCLO82SGnA1Jxcl1mvq_4WDWg", bot = False)
+    
+token= os.environ.get('BOT_TOKEN')
+client.run( token, bot = False )
