@@ -6,7 +6,7 @@ import random
 from random import randint, choice, choices
 import asyncio
 
-client = commands.Bot( command_prefix = '*', self_bot = True)
+client = commands.Bot( command_prefix = '*', self_bot = Falce)
 
 @client.event
 async def on_redy():
