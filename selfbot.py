@@ -44,6 +44,11 @@ async def priv( ctx ):
         a = random.choice(['эй','привет','алло','девять чи десять?','ку','аваава','как дела?','упс','ДЕВЯТЬ???','ало','алооо','здарова'])
         await ctx.send(a)
         await asyncio.sleep(20)
+@client.command()
+async def status( ctx ):
+    await ctx.channel.purge( limit = 1 )
+    while True:
+        await client.change_presence(activity=discord.Game(name='ROBLOX'))   # играет в 'ваш текст '      
         
 #send_a
 @client.command()
