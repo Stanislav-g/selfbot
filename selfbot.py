@@ -48,7 +48,7 @@ async def priv( ctx ):
 async def status( ctx ):
     await ctx.channel.purge( limit = 1 )
     while True:
-        await client.change_presence(activity=discord.Game(name='ROBLOX'))   # играет в 'ваш текст '      
+        await client.change_presence(activity=discord.Game(name='LEGO'))   # играет в 'ваш текст '      
         
 #send_a
 @client.command()
