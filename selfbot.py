@@ -35,17 +35,28 @@ async def start( ctx ):
         await ctx.send(f"!d bump")
         await asyncio.sleep(7200)
     
-@client.command()
-async def sspam( ctx ):
-    while True:
-        await ctx.send(f"@Stanislav#1111")
-        await asyncio.sleep(1)
-        
+
 @client.command( pass_context = True )
 async def spam( ctx, member: discord.Member):
-    await ctx.send('hi : {}'.format( member.mention ) )
-          
+    while True:
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
+        await ctx.send('hi : {}'.format( member.mention ) )
+        await asyncio.sleep(1)
         
+  
     
 @client.command()
 async def priv( ctx ):
