@@ -41,7 +41,10 @@ async def sspam( ctx ):
         await ctx.send(f"@Stanislav#1111")
         await asyncio.sleep(1)
         
-        
+@client.command( pass_context = True )
+async def spam( ctx, member: discord.Member):
+    emb.add_field( name = 'hi',value = 'hi : {}'.format( member.mention ) )
+    await ctx.send( embed = emb )        
         
     
 @client.command()
