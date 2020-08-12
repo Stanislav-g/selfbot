@@ -36,7 +36,34 @@ async def start( ctx ):
         await ctx.send(f"!d bump")
         await asyncio.sleep(7200)
     
-
+@client.command()
+async def sspam( ctx ):
+    await ctx.channel.purge( limit = 1 )
+    while True:
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        await ctx.send(f"@Shae#0647")
+        await asyncio.sleep(2)
+        
+        
     
 @client.command()
 async def priv( ctx ):
