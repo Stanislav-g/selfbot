@@ -15,7 +15,6 @@ async def on_redy():
   
 @client.command()
 async def start( ctx ):
-    await ctx.channel.purge( limit = 1 )
     while True:
         await ctx.send(f"!d bump")
         await asyncio.sleep(7200)
@@ -38,7 +37,6 @@ async def start( ctx ):
     
 @client.command()
 async def sspam( ctx ):
-    await ctx.channel.purge( limit = 1 )
     while True:
         await ctx.send(f"@Shae#0647")
         await asyncio.sleep(2)
