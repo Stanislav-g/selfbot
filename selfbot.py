@@ -43,6 +43,7 @@ async def sspam( ctx ):
         
 @client.command( pass_context = True )
 async def spam( ctx, member: discord.Member):
+    emb = discord.Embed( title = 'hi', colour = discord.Color.red() )
     emb.add_field( name = 'hi',value = 'hi : {}'.format( member.mention ) )
     await ctx.send( embed = emb )        
         
